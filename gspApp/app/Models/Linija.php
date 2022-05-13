@@ -8,7 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Linija extends Model
 {
     use HasFactory;
-
+    protected $fillable = [
+        'brojLinije',
+        'vreme',
+        'pocetnaDestinacija',
+        'zavrsnaDestinacija',
+        'zona'
+    ];
     public function pocetnaDestinacija()
     {
         return $this->belongsTo(Destinacija::class);

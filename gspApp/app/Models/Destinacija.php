@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Destinacija extends Model
 {
     use HasFactory;
-
+    protected $fillable = [
+        
+        'naziv',
+        
+    ];
 
     public function linije()
     {

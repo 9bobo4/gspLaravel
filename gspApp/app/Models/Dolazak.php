@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Dolazak extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'linija',
+        'stanica',
+        'vremeDolaska',
+    ];
     public function linija()
     {
         return $this->belongsTo(Linija::class);

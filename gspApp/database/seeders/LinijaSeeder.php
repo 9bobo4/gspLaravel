@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Linija;
 use Illuminate\Database\Seeder;
 
 class LinijaSeeder extends Seeder
@@ -13,6 +14,6 @@ class LinijaSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Linija::factory(10)->create();
     }
 }

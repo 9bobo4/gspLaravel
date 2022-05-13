@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Dolazak;
+use App\Models\Stanica;
 use Illuminate\Database\Seeder;
 
 class DolazakSeeder extends Seeder
@@ -13,6 +15,8 @@ class DolazakSeeder extends Seeder
      */
     public function run()
     {
-        //
+       
+        Dolazak::factory(3)->create();
+        
     }
 }

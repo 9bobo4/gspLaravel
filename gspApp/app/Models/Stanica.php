@@ -9,7 +9,9 @@ class Stanica extends Model
 {
     use HasFactory;
 
-
+    protected $fillable = [
+        'naziv' 
+    ];
     public function linije()
     {
         return $this->hasMany(Linija::class);
